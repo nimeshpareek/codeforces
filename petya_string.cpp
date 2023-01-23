@@ -1,16 +1,34 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-	int rem;
-	cin >> rem;
-if(rem != 4 && rem != 7){
-            // cout << "here in 4";
-            cout << "0" << endl;
-            // break;
-        }
-		else{
-			cout << "1" << endl;
-		}
-return 0;
+    int n;
+    cin >> n;
+
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+        arr[i] = arr[i] - 1;
+    }
+
+    // 1 2 3 0
+    //
+    //  for(int i=0;i<n;i++){
+    //     cout << "arr is "<< arr[i] << " ";
+    // }
+    int temp[n];
+    // cout << endl;
+    for (int i = 0; i < n; i++)
+    {
+        int x = arr[i];
+        temp[x] = i + 1;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << temp[i] << " ";
+    }
+
+    return 0;
 }
