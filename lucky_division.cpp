@@ -25,6 +25,12 @@ if(num%4==0){
 else if(num %7 == 0){
     cout << "YES" << endl;
 }
+else if(num %47== 0){
+    cout << "YES" << endl;
+}
+else if(num %74 == 0){
+    cout << "YES" << endl;
+}
 else{
     int r;
     if(check(num,r)==0){
